@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="stylesheets/myStyles.css">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/myStyles.css">
 	</head>
 	<body>
 		<div class="container">
 			<div class="boxes">
 				<div class="greeting-left">
 					<h2>Born Every Minute</h2>
+						<p><%= @sucker %></p>
 					<h1>Coming Soon!</h1>
 					<p>This is going to be the most amazing this you've ever seen. Really.</p>
 					<p>Give us your deets and we'll let you in on the ground floor..</p>
 				</div>
 				<div class="logo-right">
+					<img src="/images/logomountain.jpeg">
 				</div>
 			</div>	
 
 				<div class="form_container">
-					<form action="thanks.html" method="POST" name="suckers_form">
+					<form action="http://localhost:4567/thanks" method="post" name="suckers_form">
 						<input type="text" name="name" placeholder="What everybody calls you" width=77><br>
 						<input type="email" name="email" placeholder="Your@email.com"><br>
 						<input type="text" name="twitter" placeholder="@Twitter"><br>

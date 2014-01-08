@@ -1,18 +1,21 @@
 require 'rubygems'
 require 'sinatra'
+require 'pry'
 
 get '/' do
-  html :index
+  @sucker = "I am a sucker."
+  erb :index
 end
 
-get '/thanks' do
-  html :thanks
+post '/thanks' do 
+  binding.pry
+  erb :thanks
 end
 
 get '/suckers' do
-  html :suckers
+  erb :suckers
 end
 
 get '/suckers/1' do
-  html :suckers1
+  erb :suckers1
 end
