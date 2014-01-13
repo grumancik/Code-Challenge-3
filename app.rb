@@ -3,12 +3,12 @@ require 'sinatra'
 require 'pry'
 
 get '/' do
-  @sucker = "I am a sucker."
   erb :index
 end
 
 post '/thanks' do 
-  binding.pry
+ @sucker = params[:sucker]
+  "Thanks, #{@sucker}!"
   erb :thanks
 end
 
