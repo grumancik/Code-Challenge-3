@@ -6,24 +6,24 @@
 	<body>
 		<div class="container">
 			<div class="boxes">
-				<div class="greeting-left clear">
+				<div class="greeting-left">
 					<h2>Born Every Minute</h2>
 					<h1>Coming Soon!</h1>
-					<p>This is going to be the most amazing this you've ever seen. Really.</p>
+					<p>This is going to be the most amazing thing you've ever seen. Really.</p>
 					<p>Give us your deets and we'll let you in on the ground floor..</p>
 				</div>
-				<br />
-				<div class="logo-right clear">
+
+				<div class="logo-right">
 					<img src="/images/logomountain.jpeg">
 				</div>
 			</div>	
 
-				<div class="form_container">
+				<div class="form_container clear">
 					<form action="http://localhost:4567/thanks" method="post" name="suckers_form">
-						<input type="text" name="name" placeholder="Name" width=77><br>
-						<input type="email" name="email" placeholder="Your@email.com"><br>
-						<input type="text" name="twitter" placeholder="@Twitter"><br>
-						<input type="submit" value="Press the button!">
+						<input id="name-input" type="text" name="name" placeholder="Name" width=77><br>
+						<input class="email-twitter" type="email" name="email" placeholder="Your@email.com"><br>
+						<input class="email-twitter" type="text" name="twitter" placeholder="@Twitter"><br>
+						<input id="submit-button" type="submit" value="Press the button!">
 					</form>
 				</div>
 		</div>

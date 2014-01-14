@@ -7,8 +7,11 @@ get '/' do
 end
 
 post '/thanks' do 
- @sucker = params[:sucker]
-  "Thanks, #{@sucker}!"
+ @name = params["name"]
+ File.open('suckers.csv', 'a') do |file_handle|
+  file_handle.puts "#{params['name']}, #{params['email']}, #{params['twitter']}"
+ end
+ # binding.pry
   erb :thanks
 end
 
